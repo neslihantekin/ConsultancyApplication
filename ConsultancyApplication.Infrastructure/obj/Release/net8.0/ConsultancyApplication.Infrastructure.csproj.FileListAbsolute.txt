@@ -1,0 +1,17 @@
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\bin\Release\net8.0\ConsultancyApplication.Infrastructure.deps.json
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\bin\Release\net8.0\ConsultancyApplication.Infrastructure.runtimeconfig.json
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\bin\Release\net8.0\ConsultancyApplication.Infrastructure.dll
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\bin\Release\net8.0\ConsultancyApplication.Infrastructure.pdb
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\bin\Release\net8.0\ConsultancyApplication.Core.dll
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\bin\Release\net8.0\ConsultancyApplication.Core.pdb
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.csproj.AssemblyReference.cache
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.AssemblyInfoInputs.cache
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.AssemblyInfo.cs
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\Consulta.39D86183.Up2Date
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.dll
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\refint\ConsultancyApplication.Infrastructure.dll
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.pdb
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ConsultancyApplication.Infrastructure.genruntimeconfig.cache
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Release\net8.0\ref\ConsultancyApplication.Infrastructure.dll

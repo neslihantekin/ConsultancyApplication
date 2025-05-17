@@ -1,0 +1,12 @@
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\bin\Release\net8.0\ConsultancyApplication.Core.deps.json
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\bin\Release\net8.0\ConsultancyApplication.Core.dll
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\bin\Release\net8.0\ConsultancyApplication.Core.pdb
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ConsultancyApplication.Core.csproj.AssemblyReference.cache
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ConsultancyApplication.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ConsultancyApplication.Core.AssemblyInfoInputs.cache
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ConsultancyApplication.Core.AssemblyInfo.cs
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ConsultancyApplication.Core.csproj.CoreCompileInputs.cache
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ConsultancyApplication.Core.dll
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\refint\ConsultancyApplication.Core.dll
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ConsultancyApplication.Core.pdb
+C:\Nesli\ConsultancyApplication\ConsultancyApplication.Core\obj\Release\net8.0\ref\ConsultancyApplication.Core.dll

@@ -1,0 +1,461 @@
+﻿@using System.Text.Json
+@model EndexViewModel
+
+@{
+    var selectedType = "hourly";
+    if (ViewContext?.HttpContext?.Request?.Query.ContainsKey("type") == true)
+    {
+        selectedType = ViewContext.HttpContext.Request.Query["type"].ToString().ToLower();
+    }
+    var labelsJson = JsonSerializer.Serialize(Model.Labels ?? new List<string>());
+    var dataJson = JsonSerializer.Serialize(Model.Data ?? new List<decimal>());
+}
+<!-- Sayfa içeriği -->
+<div class="container-scroller d-flex">
+    <div class="container-fluid page-body-wrapper">
+        <!-- GÜNCEL TÜKETİM + KARTLAR -->
+        <div class="row">
+            <!-- Fatura Tüketim Tablosu -->
+            <div class="col-lg-9 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-green text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="mdi mdi-timer-sand"></i>
+                            <strong>Fatura Tüketimi</strong>
+                            <span class="ms-2 text-white-50 small">
+                                (@Model.InvoiceStartDate.ToString("dd.MM.yyyy") - @Model.InvoiceEndDate.ToString("dd.MM.yyyy"))
+                            </span>
+                        </div>
+                        <button class="btn btn-outline-light btn-sm">
+                            <i class="mdi mdi-arrow-collapse"></i> Çekiş
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center align-middle">
+                                <tbody>
+                                    <tr>
+                                        <th>T Toplam</th>
+                                        <td>@Model.InvoiceTotalKwh.ToString("N2") kWh</td>
+                                        <th>Son Okuma</th>
+                                        <td>@Model.InvoiceEndDate.ToString("dd/MMMM/yyyy HH:mm")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>T1 (Gündüz)</th>
+                                        <td>@Model.InvoiceT1Kwh.ToString("N3") kWh</td>
+                                        <th>Demand Değeri - Tarihi</th>
+                                        <td>@Model.InvoiceDemandValue.ToString("N3") kW - @Model.InvoiceDemandDate.ToString("dd/MMMM/yyyy HH:mm")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>T2 (Puant)</th>
+                                        <td>@Model.InvoiceT2Kwh.ToString("N3") kWh</td>
+                                        <th>Reaktif Endüktif</th>
+                                        <td>@Model.InvoiceReactiveInductive.ToString("N3") kVArh</td>
+                                    </tr>
+                                    <tr>
+                                        <th>T3 (Gece)</th>
+                                        <td>@Model.InvoiceT3Kwh.ToString("N3") kWh</td>
+                                        <th>Reaktif Kapasitif</th>
+                                        <td>@Model.InvoiceReactiveCapacitive.ToString("N3") kVArh</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağdaki Kartlar -->
+            <div class="col-lg-3 mb-4 d-flex flex-column justify-content-center gap-3">
+                <div class="card shadow-sm" style="background-color: #f5fff8;">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="mdi mdi-flash-outline text-primary me-2" style="font-size: 24px;"></i>
+                            <h5 class="mb-0">Kurulu Güç</h5>
+                        </div>
+                        <h3 class="fw-bold text-dark">@Model.InstalledPower.ToString("F2")</h3>
+                        <p class="text-muted mb-0">⚡ Kurulu Güç</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <!-- Güncel Tüketim Tablosu -->
+            <div class="col-lg-9 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-purple text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="mdi mdi-timer-sand"></i>
+                            <strong>Güncel Tüketim | Reaktif Oranlar</strong>
+                            @* <span>@DateTime.Now.ToString("dd/MMMM/yyyy HH:mm")</span> *@
+                        </div>
+                        <button class="btn btn-outline-light btn-sm">
+                            <i class="mdi mdi-arrow-collapse"></i> Çekiş
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center align-middle">
+                                <tbody>
+                                    <tr>
+                                        <th>T Toplam</th>
+                                        <td>@Model.TotalConsumption.ToString("N2") kWh</td>
+                                        <th>Son Okuma</th>
+                                        <td>@Model.LastReadDate.ToString("dd/MMMM/yyyy HH:mm")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>T1 (Gündüz)</th>
+                                        <td>@Model.DayConsumption.ToString("N3") kWh</td>
+                                        <th>Demand Değeri - Tarihi</th>
+                                        <td>@Model.DemandValue.ToString("N3") kW - @Model.DemandDate.ToString("dd/MMMM/yyyy HH:mm")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>T2 (Puant)</th>
+                                        <td>@Model.PuantConsumption.ToString("N3") kWh</td>
+                                        <th>Reaktif Endüktif</th>
+                                        <td>@Model.ReactiveInductive.ToString("N3") kVArh</td>
+                                    </tr>
+                                    <tr>
+                                        <th>T3 (Gece)</th>
+                                        <td>@Model.NightConsumption.ToString("N3") kWh</td>
+                                        <th>Reaktif Kapasitif</th>
+                                        <td>@Model.ReactiveCapacitive.ToString("N3") kVArh</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağdaki Kartlar -->
+            <div class="col-lg-3 mb-4 d-flex flex-column justify-content-center gap-3">
+                <!-- Reaktif Endüktif Oran Kartı -->
+                <div class="card shadow-sm" style="background-color: #f5f8ff;">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="mdi mdi-flash-outline text-primary me-2" style="font-size: 24px;"></i>
+                            <h5 class="mb-0">Reaktif Endüktif Oran</h5>
+                        </div>
+                        <h3 class="fw-bold text-dark">@Model.CurrentReactiveInductiveRatio.ToString("F2")%</h3>
+                        <p class="text-muted mb-0">⚡ Endüktif oran değeri</p>
+                    </div>
+                </div>
+
+                <!-- Reaktif Kapasitif Oran Kartı -->
+                <div class="card shadow-sm" style="background-color: #f5fff8;">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="mdi mdi-flash-outline text-success me-2" style="font-size: 24px;"></i>
+                            <h5 class="mb-0">Reaktif Kapasitif Oran</h5>
+                        </div>
+                        <h3 class="fw-bold text-dark">@Model.CurrentReactiveCapacitiveRatio.ToString("F2")%</h3>
+                        <p class="text-muted mb-0">🔋 Kapasitif oran değeri</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-12">
+                <form method="get" action="@Url.Action("GetEndexes", "Home")">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label>Başlangıç Tarihi</label>
+                            <input type="datetime-local" name="startDate" class="form-control" value="@Context.Request.Query["startDate"]" />
+                        </div>
+                        <div class="col-md-2">
+                            <label>Bitiş Tarihi</label>
+                            <input type="datetime-local" name="endDate" class="form-control" value="@Context.Request.Query["endDate"]" />
+                        </div>
+                        <div class="col-md-2">
+                            <label>Veri Tipi</label>
+                            <select name="type" class="form-control">
+                                <option value="hourly" selected="@((selectedType == "hourly").ToString().ToLower())">Saatlik</option>
+                                <option value="monthly" selected="@((selectedType == "monthly").ToString().ToLower())">Aylık</option>
+                                <option value="yearly" selected="@((selectedType == "yearly").ToString().ToLower())">Yıllık</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Hazır Aralıklar</label>
+                            <select id="presetRange" class="form-control">
+                                <option value="">Seçiniz</option>
+                                <option value="today">Bugün</option>
+                                <option value="yesterday">Dün</option>
+                                <option value="thismonth">Bu Ay</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-end">
+                            <button type="submit" class="btn btn-success w-100">Verileri Göster</button>
+                        </div>
+                    </div>
+
+                    <!-- ALT BUTONLAR: tam ortada ve eşit genişlikte -->
+                    <div class="row mt-3 justify-content-end">
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <a class="btn btn-outline-primary w-50 me-2 text-center" href="/Home/ExportToExcel">Excel Olarak İndir</a>
+                            <a class="btn btn-outline-danger w-50 text-center" href="/Home/ExportToPdf">PDF Olarak İndir</a>
+                            @* <a class="btn btn-outline-danger w-50 text-center" id="pdf-indir-btn">PDF Olarak İndir</a> *@
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Grafik ve İbreler -->
+        <div id="grafikKapsayici" class="row">
+            <!-- Bar grafik (sol taraf) -->
+            <div class="col-md-8">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Endeks Bilgileri</h4>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gauge grafikler (sağ taraf, yan yana) -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex justify-content-around align-items-center">
+                        <!-- Reaktif Endüktif -->
+                        <div class="text-center">
+                            <h6>Reaktif Endüktif</h6>
+                            <div id="gauge-inductive" style="width: 150px; height: 150px;"></div>
+                        </div>
+
+                        <!-- Reaktif Kapasitif -->
+                        <div class="text-center">
+                            <h6>Reaktif Kapasitif</h6>
+                            <div id="gauge-capacitive" style="width: 150px; height: 150px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer her zaman altta kalır -->
+<footer class="footer mt-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © mvdenerji.com 2019</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+                    <a href="https://www.mvdenerji.com/" target="_blank">İndirimli Elektriğin Hızlı ve Güvenilir Adresi</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+       const today = new Date();
+       const oneMonthLater = new Date();
+       oneMonthLater.setMonth(today.getMonth() + 1);
+
+       const options = { year: 'numeric', month: 'long', day: '2-digit' };
+       const formattedToday = today.toLocaleDateString('tr-TR', options);
+
+       document.getElementById("dynamic-date").textContent = `${formattedToday}`;
+
+       function updateClock() {
+         const now = new Date();
+         const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+         const formattedTime = now.toLocaleTimeString('tr-TR', timeOptions);
+         document.getElementById("dynamic-time").textContent = formattedTime;
+       }
+
+       updateClock(); // ilk çağrı
+       setInterval(updateClock, 1000); // her saniye güncelle
+     });
+
+    const chartLabels = @Html.Raw(labelsJson);
+    const chartData = @Html.Raw(dataJson);
+
+    new Chart(document.getElementById('myChart'), {
+        type: 'bar',
+        data: {
+            labels: chartLabels,
+            datasets: [{
+                label: 'Tüketim',
+                data: chartData,
+                borderWidth: 1,
+                backgroundColor: 'rgba(54, 162, 235, 0.5)'
+            }]
+        },
+        options: {
+            scales: { y: { beginAtZero: true } }
+        }
+    });
+
+    document.getElementById("presetRange").addEventListener("change", function () {
+        const today = new Date();
+        let startDate = "", endDate = "";
+        switch (this.value) {
+            case "today":
+                startDate = today.toISOString().slice(0, 10) + "T00:00";
+                endDate = today.toISOString().slice(0, 10) + "T23:59";
+                break;
+            case "yesterday":
+                const yest = new Date(today); yest.setDate(today.getDate() - 1);
+                startDate = yest.toISOString().slice(0, 10) + "T00:00";
+                endDate = yest.toISOString().slice(0, 10) + "T23:59";
+                break;
+            case "thismonth":
+                const first = new Date(today.getFullYear(), today.getMonth(), 1);
+                const last = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+                startDate = first.toISOString().slice(0, 10) + "T00:00";
+                endDate = last.toISOString().slice(0, 10) + "T23:59";
+                break;
+        }
+        if (startDate && endDate) {
+            document.querySelector("[name='startDate']").value = startDate;
+            document.querySelector("[name='endDate']").value = endDate;
+        }
+    });
+
+      // Razor'dan gelen değerler
+    var reactiveInductive = parseFloat("@Model.ReactiveInductiveRatio.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)");
+    var reactiveCapacitive = parseFloat("@Model.ReactiveCapacitiveRatio.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)");
+    var kuruluGuc = parseFloat("@Model.InstalledPower.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)");
+
+    // Endüktif Gauge Ayarları
+       am4core.ready(function () {
+      am4core.useTheme(am4themes_animated);
+
+      // Fonksiyonel gauge oluşturucu
+      function createGauge(divId, value, ranges) {
+        var chart = am4core.create(divId, am4charts.GaugeChart);
+        chart.innerRadius = -20;
+        chart.startAngle = -180;
+        chart.endAngle = 0;
+
+        // Arka plan
+        var axis = chart.xAxes.push(new am4charts.ValueAxis());
+        axis.min = 0;
+        axis.max = 100;
+        axis.strictMinMax = true;
+        axis.renderer.labels.template.radius = 15;
+        axis.renderer.labels.template.fontSize = 10;
+        axis.renderer.labels.template.fill = am4core.color("#666");
+        axis.renderer.minGridDistance = 10;
+        axis.renderer.grid.template.stroke = "#ddd";
+        axis.renderer.grid.template.strokeOpacity = 0.2;
+        axis.renderer.ticks.template.disabled = false;
+        axis.renderer.ticks.template.stroke = am4core.color("#ccc");
+        axis.renderer.ticks.template.strokeOpacity = 1;
+        axis.renderer.ticks.template.length = 6;
+
+        // Renkli alanlar
+        ranges.forEach(function (range) {
+          var axisRange = axis.axisRanges.create();
+          axisRange.value = range.from;
+          axisRange.endValue = range.to;
+          axisRange.axisFill.fill = am4core.color(range.color);
+          axisRange.axisFill.fillOpacity = 1;
+          axisRange.axisFill.zIndex = -1;
+        });
+
+        // İbre
+        var hand = chart.hands.push(new am4charts.ClockHand());
+        hand.value = value;
+        hand.pin.disabled = true;
+        hand.fill = am4core.color("#000");
+        hand.stroke = am4core.color("#000");
+        hand.radius = am4core.percent(99);
+        hand.startWidth = 6;
+
+        // Orta değer etiketi
+        var label = chart.createChild(am4core.Label);
+        label.text = value.toFixed(2) + "%";
+        label.fontSize = 20;
+        label.align = "center";
+        label.valign = "middle";
+        label.horizontalCenter = "middle";
+        label.verticalCenter = "middle";
+        label.x = am4core.percent(50);
+        label.y = am4core.percent(90); // Alt ortada çıkmasın diye biraz yukarıda tuttuk
+
+      }
+
+      // // Endüktif renk aralıkları
+      // var inductiveRanges = [
+      //   { from: 0, to: 20, color: "#e74c3c" },
+      //   { from: 20, to: 30, color: "#27ae60" },
+      //   { from: 30, to: 100, color: "#e74c3c" }
+      // ];
+
+      // // Kapasitif renk aralıkları
+      // var capacitiveRanges = [
+      //   { from: 0, to: 15, color: "#e74c3c" },
+      //   { from: 15, to: 20, color: "#27ae60" },
+      //   { from: 20, to: 100, color: "#e74c3c" }
+      // ];
+     
+      
+      // Dinamik renk aralıkları
+    var inductiveRanges, capacitiveRanges;
+
+    if (kuruluGuc < 50) {
+      inductiveRanges = [
+        { from: 0, to: 15, color: "#e74c3c" },
+        { from: 15, to: 20, color: "#27ae60" },
+        { from: 20, to: 100, color: "#e74c3c" }
+      ];
+      capacitiveRanges = [
+        { from: 0, to: 10, color: "#e74c3c" },
+        { from: 10, to: 15, color: "#27ae60" },
+        { from: 15, to: 100, color: "#e74c3c" }
+      ];
+    } else {
+      inductiveRanges = [
+        { from: 0, to: 20, color: "#e74c3c" },
+        { from: 20, to: 33, color: "#27ae60" },
+        { from: 33, to: 100, color: "#e74c3c" }
+      ];
+      capacitiveRanges = [
+        { from: 0, to: 15, color: "#e74c3c" },
+        { from: 15, to: 20, color: "#27ae60" },
+        { from: 20, to: 100, color: "#e74c3c" }
+      ];
+    }
+
+      // Grafikleri oluştur
+      createGauge("gauge-inductive", reactiveInductive, inductiveRanges);
+      createGauge("gauge-capacitive", reactiveCapacitive, capacitiveRanges);
+    });
+
+    // document.getElementById('pdfDownloadBtn').addEventListener('click', function () {
+    //     const hedefDiv = document.getElementById('grafikKapsayici');
+
+    //     html2canvas(hedefDiv).then(canvas => {
+    //         const { jsPDF } = window.jspdf;
+    //         const pdf = new jsPDF('l', 'mm', 'a4'); // yatay PDF
+    //         const imgData = canvas.toDataURL('image/png');
+
+    //         const pageWidth = pdf.internal.pageSize.getWidth();
+    //         const imgProps = pdf.getImageProperties(imgData);
+    //         const imgHeight = (imgProps.height * pageWidth) / imgProps.width;
+
+    //         pdf.addImage(imgData, 'PNG', 0, 0, pageWidth, imgHeight);
+    //         pdf.save("grafik-raporu.pdf");
+    //     });
+    // });
+
+
+</script>
