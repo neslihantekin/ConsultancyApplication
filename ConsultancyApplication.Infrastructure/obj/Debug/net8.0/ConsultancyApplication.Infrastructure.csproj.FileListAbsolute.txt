@@ -32,3 +32,4 @@ C:\Projects\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Deb
 C:\Projects\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Debug\net8.0\ConsultancyApplication.Infrastructure.pdb
 C:\Projects\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Debug\net8.0\ConsultancyApplication.Infrastructure.genruntimeconfig.cache
 C:\Projects\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Debug\net8.0\ref\ConsultancyApplication.Infrastructure.dll
+C:\Projects\ConsultancyApplication\ConsultancyApplication.Infrastructure\obj\Debug\net8.0\ConsultancyApplication.Infrastructure.sourcelink.json

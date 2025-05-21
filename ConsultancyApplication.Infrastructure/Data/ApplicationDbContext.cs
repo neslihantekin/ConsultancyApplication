@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using ConsultancyApplication.Core.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using ConsultancyApplication.Core.Entities;
 
 namespace ConsultancyApplication.Infrastructure.Data
 {
     // Identity işlemlerini de içeriyor, bu sayede hem ASP.NET Identity hem de domain entity'ler aynı DbContext üzerinden yönetiliyor.
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

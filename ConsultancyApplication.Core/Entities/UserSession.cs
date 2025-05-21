@@ -11,5 +11,14 @@ namespace ConsultancyApplication.Core.Entities
         public int DefinitionType { get; set; }        // 👈 Abonelikten gelen DefinitionType
         public string Title { get; set; }
         public decimal InstalledPower { get; set; }  //Kurulu Güç
+        public void Reset()
+        {
+            Username = null;
+            Password = null;
+            AccessToken = null;
+            TokenExpireTime = DateTime.MinValue;
+            Title = null;
+            InstalledPower = 0;
+        }
     }
 }

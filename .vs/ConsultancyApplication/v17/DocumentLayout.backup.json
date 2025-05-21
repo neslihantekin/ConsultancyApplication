@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Projects\\ConsultancyApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.infrastructure\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|solutionrelative:consultancyapplication.infrastructure\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10ECACBA-84F4-468A-871E-57AE8C6B07A4}|ConsultancyApplication.Core\\ConsultancyApplication.Core.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.core\\entities\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10ECACBA-84F4-468A-871E-57AE8C6B07A4}|ConsultancyApplication.Core\\ConsultancyApplication.Core.csproj|solutionrelative:consultancyapplication.core\\entities\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\views\\admin\\clientcredentialmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\views\\admin\\clientcredentialmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.infrastructure\\consultancyapplication.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|solutionrelative:consultancyapplication.infrastructure\\consultancyapplication.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|solutionrelative:consultancyapplication.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10ECACBA-84F4-468A-871E-57AE8C6B07A4}|ConsultancyApplication.Core\\ConsultancyApplication.Core.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.core\\entities\\clientcredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,92 +50,72 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "ConsultancyApplication.Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T08:10:14.396Z"
+              "DocumentIndex": 3,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Core\\Entities\\UserSession.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Core\\Entities\\UserSession.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Core\\Entities\\UserSession.cs",
+              "RelativeToolTip": "ConsultancyApplication.Core\\Entities\\UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T11:24:24.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ConsultancyApplication.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAOEAAAAAAAAAAAASwEQBAAAnAAAAAAAAAA==",
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T08:05:40.181Z"
+              "WhenOpened": "2025-05-21T11:01:36.11Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientCredentialManager.cshtml",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
-              "RelativeToolTip": "ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T07:07:02.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AccountController.cs",
               "RelativeToolTip": "ConsultancyApplication.Web\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAwwJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T15:19:29.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "ConsultancyApplication.Web\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T15:19:23.596Z",
+              "WhenOpened": "2025-05-06T15:19:29.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Program.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Program.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Program.cs",
+              "RelativeToolTip": "ConsultancyApplication.Web\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T15:15:43.01Z"
+              "WhenOpened": "2025-05-21T10:35:30.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ClientCredential.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
-              "RelativeToolTip": "ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T15:14:03.548Z"
+              "Title": "ConsultancyApplication.Infrastructure",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj",
+              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-21T10:29:28.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -136,6 +128,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientCredentialManager.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
+              "RelativeToolTip": "ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
+              "ViewState": "AgIAAAAAAAAAMDMzMzPbv00AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T07:07:02.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ConsultancyApplication.Web\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T15:19:23.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ConsultancyApplication.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAASwEQBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T08:05:40.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T15:15:43.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClientCredential.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
+              "RelativeToolTip": "ConsultancyApplication.Core\\Entities\\ClientCredential.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T15:14:03.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
