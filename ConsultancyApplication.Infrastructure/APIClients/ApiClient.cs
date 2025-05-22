@@ -4,23 +4,27 @@ namespace ConsultancyApplication.Infrastructure.APIClients
 {
     public class ApiClient
     {
-
         private readonly HttpClient _httpClient;
 
         public ApiClient(HttpClient httpClient)
         {
             _httpClient = httpClient;
-            // Gerekirse _httpClient.BaseAddress = new Uri("http://IP/aril-portalserver/"); gibi
         }
 
         public async Task<HttpResponseMessage> PostAsync(string url, HttpContent content, Dictionary<string, string> headers = null)
-        {                     
+        {
             HttpClientHandler handler = new HttpClientHandler
             {
-                AllowAutoRedirect = false // Yönlendirmeleri otomatik yapma, manuel kontrol edelim.
+                AllowAutoRedirect = false // Yönlendirmeleri otomatik yapma, manuel kontrol edelim
             };
             using var client = new HttpClient(handler);
 
+            var request = new HttpRequestMessage(HttpMethod.Post, url)
+            {
+                Content = content
+            };
+
+            // ✅ Header'ları düzgün şekilde ekle
             if (headers != null)
             {
                 foreach (var header in headers)
@@ -29,44 +33,51 @@ namespace ConsultancyApplication.Infrastructure.APIClients
                     {
                         client.DefaultRequestHeaders.Add(header.Key, header.Value);
                     }
+                    // aril-service-token gibi özel başlıklar için
+                    request.Headers.TryAddWithoutValidation(header.Key, header.Value);
                 }
             }
 
-            var request = new HttpRequestMessage(HttpMethod.Post, url);
+            HttpResponseMessage response;
 
-            // POST isteği
-            HttpResponseMessage response = await client.SendAsync(request);
-
-            // Eğer yönlendirme varsa, aynı POST metodunu koruyarak tekrar isteği gönder
-            if ((int)response.StatusCode >= 300 && (int)response.StatusCode < 400)
+            try
             {
-                if (response.Headers.Location != null)
-                {
-                    string redirectUrl = response.Headers.Location.ToString();
+                response = await client.SendAsync(request);
 
-                    // 307 ve 308 yönlendirmelerinde POST metodunu koruyarak tekrar istek yap
+                // Eğer yönlendirme varsa, aynı POST metodunu koruyarak tekrar isteği gönder
+                if ((int)response.StatusCode >= 300 && (int)response.StatusCode < 400 && response.Headers.Location != null)
+                {
+                    var redirectUrl = response.Headers.Location.ToString();
+
                     if (response.StatusCode == HttpStatusCode.TemporaryRedirect ||
                         response.StatusCode == HttpStatusCode.PermanentRedirect ||
                         response.StatusCode == HttpStatusCode.Found)
                     {
-                        using var newRequest = new HttpRequestMessage(HttpMethod.Post, redirectUrl)
+                        var newRequest = new HttpRequestMessage(HttpMethod.Post, redirectUrl)
                         {
                             Content = content
                         };
+
+                        // 🔁 Header'ları yeniden ekle
+                        if (headers != null)
+                        {
+                            foreach (var header in headers)
+                            {
+                                newRequest.Headers.TryAddWithoutValidation(header.Key, header.Value);
+                            }
+                        }
+
                         response = await client.SendAsync(newRequest);
                     }
                 }
-            }
-            // Gerekirse headerları temizle (reuse scenario)
-            if (headers != null)
-            {
-                foreach (var header in headers)
-                {
-                    client.DefaultRequestHeaders.Remove(header.Key);
-                }
-            }
 
-            return response;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                // İsteğe bağlı loglama vs.
+                throw new Exception($"HTTP POST hatası: {ex.Message}", ex);
+            }
         }
     }
 }

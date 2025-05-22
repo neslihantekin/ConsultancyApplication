@@ -32,7 +32,7 @@ namespace ConsultancyApplication.Infrastructure.Services
                 return newToken;
             }
             // Dokümanda: http://IP/aril-portalserver/customer-rest-api/generate-token
-            var url = "http://ososportal.bedas.com.tr/aril-portalserver/customer-rest-api/generate-token";
+            var url = "https://ososportal.bedas.com.tr/aril-portalserver/customer-rest-api/generate-token";
 
             // Gönderilecek JSON gövdesi
             var payloadObj = new

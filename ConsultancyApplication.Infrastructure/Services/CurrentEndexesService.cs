@@ -28,7 +28,7 @@ namespace ConsultancyApplication.Infrastructure.Services
             try
             {
                 var token = await _tokenService.GenerateTokenAsync();
-                var url = "http://ososportal.bedas.com.tr/aril-portalserver/customer-rest-api/proxy-aril/GetCurrentEndexes";
+                var url = "https://ososportal.bedas.com.tr/aril-portalserver/customer-rest-api/proxy-aril/GetCurrentEndexes";
 
                 // 👤 Kullanıcıya ait serno ve definition type oturumdan geliyor
                 var ownerSerno = _userSession.OwnerSerno;

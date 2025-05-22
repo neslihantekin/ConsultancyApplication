@@ -2,7 +2,6 @@
 using ConsultancyApplication.Core.Interfaces.Repositories;
 using ConsultancyApplication.Core.Interfaces.Services;
 using ConsultancyApplication.Infrastructure.APIClients;
-using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 
@@ -34,7 +33,7 @@ namespace ConsultancyApplication.Infrastructure.Services
                     token = await _tokenService.GenerateTokenAsync();
                 }
 
-                var url = "http://ososportal.bedas.com.tr/aril-portalserver/customer-rest-api/proxy-aril/GetCustomerPortalSubscriptions";
+                var url = "https://ososportal.bedas.com.tr/aril-portalserver/customer-rest-api/proxy-aril/GetCustomerPortalSubscriptions";
 
                 var payloadObj = new { PageNumber = pageNumber, PageSize = pageSize };
                 var jsonPayload = JsonSerializer.Serialize(payloadObj);
@@ -44,7 +43,6 @@ namespace ConsultancyApplication.Infrastructure.Services
                 {
                     { "aril-service-token", token.AccessToken }
                 };
-
                 var response = await _apiClient.PostAsync(url, content, headers);
                 if (response.IsSuccessStatusCode)
                 {

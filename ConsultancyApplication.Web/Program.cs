@@ -7,6 +7,7 @@ using ConsultancyApplication.Infrastructure.Repositories;
 using ConsultancyApplication.Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
 
 var builder = WebApplication.CreateBuilder(args);
 
