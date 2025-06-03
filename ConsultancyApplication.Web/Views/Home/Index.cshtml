@@ -10,6 +10,10 @@
     var labelsJson = JsonSerializer.Serialize(Model.Labels ?? new List<string>());
     var dataJson = JsonSerializer.Serialize(Model.Data ?? new List<decimal>());
 }
+<style>
+@Html.Raw("@media (max-width: 768px) { #gauge-inductive, #gauge-capacitive { width: 100% !important; height: auto !important; } }")
+</style>
+
 <!-- Sayfa içeriği -->
 <div class="container-scroller d-flex">
     <div class="container-fluid page-body-wrapper">
@@ -216,25 +220,25 @@
                 </div>
             </div>
 
-            <!-- Gauge grafikler (sağ taraf, yan yana) -->
+            <!-- Gauge grafikler (sağ taraf, responsive) -->
             <div class="col-md-4">
                 <div class="card h-100">
-                    <div class="card-body d-flex justify-content-around align-items-center">
-                        <!-- Reaktif Endüktif -->
-                        <div class="text-center">
-                            <h6>Reaktif Endüktif</h6>
-                            <div id="gauge-inductive" style="width: 150px; height: 150px;"></div>
-                        </div>
-
-                        <!-- Reaktif Kapasitif -->
-                        <div class="text-center">
-                            <h6>Reaktif Kapasitif</h6>
-                            <div id="gauge-capacitive" style="width: 150px; height: 150px;"></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 text-center mb-3 mb-sm-0">
+                                <h6>Reaktif Endüktif</h6>
+                                <div id="gauge-inductive" style="width: 100%; max-width: 160px; margin: 0 auto;"></div>
+                            </div>
+                            <div class="col-12 col-sm-6 text-center">
+                                <h6>Reaktif Kapasitif</h6>
+                                <div id="gauge-capacitive" style="width: 100%; max-width: 160px; margin: 0 auto;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 

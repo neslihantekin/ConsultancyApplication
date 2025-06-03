@@ -31,7 +31,7 @@ namespace ConsultancyApplication.Web.Controllers
             {
                 model.UserCode = Request.Cookies["SavedUserCode"];
                 model.Password = Request.Cookies["SavedPassword"];
-                model.AppPassword = Request.Cookies["SavedAppPassword"];
+                //model.AppPassword = Request.Cookies["SavedAppPassword"];
             }
 
             return View(model);
@@ -98,7 +98,7 @@ namespace ConsultancyApplication.Web.Controllers
 
                     Response.Cookies.Append("SavedUserCode", userLogin.UserCode, cookieOptions);
                     Response.Cookies.Append("SavedPassword", userLogin.Password, cookieOptions);
-                    Response.Cookies.Append("SavedAppPassword", userLogin.AppPassword, cookieOptions);
+                    //Response.Cookies.Append("SavedAppPassword", userLogin.AppPassword, cookieOptions);
                 }
                 else
                 {

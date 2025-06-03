@@ -1,23 +1,21 @@
 ﻿
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MVD Enerji Takip Sistemi</title>
-    <!-- base:css -->
+
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/spica/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="~/spica/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
     <link rel="stylesheet" href="~/spica/css/style.css">
-    <!-- endinject -->
     <link rel="shortcut icon" href="~/spica/images/mvd_enerji_icon.png" />
+
+    <!-- Tabulator CSS -->
+    <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
 
     <style>
         .bg-purple {
@@ -28,74 +26,58 @@
             background-color: #2A9D8F !important;
         }
 
+        .main-panel {
+            padding-top: 80px !important; /* fixed-top navbar altında boşluk bırak */
+        }
     </style>
-
 </head>
 <body>
     <div class="container-scroller d-flex">
         <div class="container-fluid">
-            <!-- partial:./partials/_navbar.html -->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow d-flex flex-row">
                 <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-                    <!-- Sol taraf: Logo + Hoşgeldiniz -->
                     <div class="d-flex flex-column align-items-start">
                         <a class="navbar-brand mb-0" href="/">🔌 MVD Enerji Takip Sistemi</a>
                         <span class="text-white fw-bold">Hoşgeldiniz, @ViewBag.Title</span>
                     </div>
-                    <!-- Sağ taraf: Tarih ve İkonlar -->
                     <ul class="navbar-nav navbar-nav-right">
                         <li class="nav-item">
                             <h4 id="dynamic-date" class="mb-0 font-weight-bold d-none d-xl-block"></h4>
                             <span id="dynamic-time" style="margin-left: 15px; font-weight: bold;"></span>
                         </li>
                         <li class="nav-item dropdown mr-1">
-                            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-                                <i class="mdi mdi-calendar mx-0"></i>
-                                <span class="count bg-info">2</span>
+                            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#">
+                                <i class="mdi mdi-calendar mx-0"></i><span class="count bg-info">2</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown mr-2">
-                            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
-                                <i class="mdi mdi-email-open mx-0"></i>
-                                <span class="count bg-danger">1</span>
+                            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#">
+                                <i class="mdi mdi-email-open mx-0"></i><span class="count bg-danger">1</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <!-- partial -->
+
             <div class="main-panel">
                 @RenderBody()
             </div>
         </div>
     </div>
 
-
-    <!-- main-panel ends -->
-    <!-- page-body-wrapper ends -->
-    <!-- container-scroller -->
-    <!-- base:js -->
+    <!-- JS -->
     <script src="~/spica/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page-->
     <script src="~/spica/vendors/chart.js/Chart.min.js"></script>
-    <!-- End plugin js for this page-->
-    <!-- inject:js -->
     <script src="~/spica/js/off-canvas.js"></script>
     <script src="~/spica/js/hoverable-collapse.js"></script>
     <script src="~/spica/js/template.js"></script>
-    <!-- endinject -->
-    <!-- plugin js for this page -->
-    <!-- End plugin js for this page -->
-    <!-- Custom js for this page-->
     <script src="~/spica/js/dashboard.js"></script>
-    <!-- End custom js for this page-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>@* 
+    <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script> *@
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-
 </html>

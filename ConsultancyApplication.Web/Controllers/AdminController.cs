@@ -2,6 +2,7 @@
 using ConsultancyApplication.Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace ConsultancyApplication.Web.Controllers
 {
@@ -14,7 +15,10 @@ namespace ConsultancyApplication.Web.Controllers
         {
             _context = context;
         }
-
+        public IActionResult TabulatorTest()
+        {
+            return View();
+        }
         [HttpGet]
         public IActionResult Index()
         {
@@ -61,8 +65,13 @@ namespace ConsultancyApplication.Web.Controllers
         }
 
         [HttpPost]
-        public JsonResult DeleteClientCredential(int id)
+        public JsonResult DeleteClientCredential([FromBody] JsonElement data)
         {
+            if (!data.TryGetProperty("id", out var idElement) || !idElement.TryGetInt32(out int id))
+            {
+                return Json(new { success = false, message = "ID alınamadı." });
+            }
+
             var entity = _context.ClientCredentials.Find(id);
             if (entity == null)
                 return Json(new { success = false });

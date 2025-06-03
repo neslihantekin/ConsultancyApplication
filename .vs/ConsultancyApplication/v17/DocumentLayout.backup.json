@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Projects\\ConsultancyApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\views\\admin\\clientcredentialmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\views\\admin\\clientcredentialmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.infrastructure\\services\\consumptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|solutionrelative:consultancyapplication.infrastructure\\services\\consumptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.infrastructure\\services\\currentendexesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|solutionrelative:consultancyapplication.infrastructure\\services\\currentendexesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.infrastructure\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|solutionrelative:consultancyapplication.infrastructure\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.infrastructure\\services\\endofmonthendexesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA24CA1-E933-49F4-96AE-BC2D7CB08334}|ConsultancyApplication.Infrastructure\\ConsultancyApplication.Infrastructure.csproj|solutionrelative:consultancyapplication.infrastructure\\services\\endofmonthendexesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\views\\admin\\clientcredentialmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\views\\admin\\clientcredentialmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|c:\\projects\\consultancyapplication\\consultancyapplication.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0452C9-BC22-4628-9AE6-18750190B60A}|ConsultancyApplication.Web\\ConsultancyApplication.Web.csproj|solutionrelative:consultancyapplication.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,82 +33,83 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EndOfMonthEndexesService.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\EndOfMonthEndexesService.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\Services\\EndOfMonthEndexesService.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\EndOfMonthEndexesService.cs",
-              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\Services\\EndOfMonthEndexesService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvxwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:31:33.495Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2090367263:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\Services\\CustomerService.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\CustomerService.cs",
-              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:31:25.185Z",
-              "EditorCaption": ""
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ConsultancyApplication.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T14:18:03.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CurrentEndexesService.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\CurrentEndexesService.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\Services\\CurrentEndexesService.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\CurrentEndexesService.cs",
-              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\Services\\CurrentEndexesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:31:08.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConsumptionService.cs",
-              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\ConsumptionService.cs",
-              "RelativeDocumentMoniker": "ConsultancyApplication.Infrastructure\\Services\\ConsumptionService.cs",
-              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Infrastructure\\Services\\ConsumptionService.cs",
-              "RelativeToolTip": "ConsultancyApplication.Infrastructure\\Services\\ConsumptionService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:00:25.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ClientCredentialManager.cshtml",
               "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
               "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
               "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
               "RelativeToolTip": "ConsultancyApplication.Web\\Views\\Admin\\ClientCredentialManager.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwMgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T07:07:02.366Z",
+              "WhenOpened": "2025-06-01T10:49:39.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AdminController.cs",
               "RelativeToolTip": "ConsultancyApplication.Web\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwAIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAowFAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T11:29:30.994Z",
+              "WhenOpened": "2025-06-01T10:50:01.774Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ConsultancyApplication.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:22:50.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Program.cs",
+              "RelativeDocumentMoniker": "ConsultancyApplication.Web\\Program.cs",
+              "ToolTip": "C:\\Projects\\ConsultancyApplication\\ConsultancyApplication.Web\\Program.cs",
+              "RelativeToolTip": "ConsultancyApplication.Web\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T12:12:30.202Z"
             }
           ]
         }

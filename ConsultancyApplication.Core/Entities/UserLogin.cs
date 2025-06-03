@@ -8,7 +8,7 @@ namespace ConsultancyApplication.Core.Entities
         public int Id { get; set; }  // Primary Key
         public string UserCode { get; set; }  // Kullanıcı adı
         public string Password { get; set; }  // Şifre         
-        public string AppPassword { get; set; }  // Şifre
+        //public string AppPassword { get; set; }  // Şifre
         
         [Display(Name = "Beni Hatırla")]
         public bool RememberMe { get; set; }
